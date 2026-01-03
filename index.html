@@ -28,28 +28,53 @@
     </header>
 
     <div class="container">
-        <main id="main-content" class="showtags" data-tagShown="false">
-            <h1 class="showtags">Welcome to Our Accessible Website</h1>
-            <p>
-                This page demonstrates a simple, semantic, and accessible layout using
-                HTML and CSS. It follows best practices for screen readers and keyboard users.
-            </p>
+        <div class="main-container">
+            <main id="main-content" class="showtags" data-tagShown="false">
+                <h1 class="showtags">Welcome to Our Accessible Website</h1>
+                <p>
+                    This page demonstrates a simple, semantic, and accessible layout using
+                    HTML and CSS. It follows best practices for screen readers and keyboard users.
+                </p>
 
-            <h2 class="showtags">Why Accessibility Matters</h2>
-            <p>
-                Accessibility ensures that everyone, including people with disabilities,
-                can use and understand your website effectively.
-            </p>
-        </main>
+                <h2 class="showtags">Why Accessibility Matters</h2>
+                <p>
+                    Accessibility ensures that everyone, including people with disabilities,
+                    can use and understand your website effectively.
+                </p>
 
-        <aside aria-labelledby="aside-title" class="showtags">
-            <h2 id="aside-title" class="showtags">Quick Links</h2>
-            <ul>
-                <li class="showtags"><a class="showtags" href="#">Accessibility Guidelines</a></li>
-                <li class="showtags"><a class="showtags" href="#">WCAG Resources</a></li>
-                <li class="showtags"><a class="showtags" href="#">Contact Support</a></li>
-            </ul>
-        </aside>
+                <section aria-labelledby="blogs-title">
+                    <h2 class="showtags" id="blogs-title">Blogs</h2>
+
+                    <ul class="Blogs showtags" id="blogs-list">
+
+                    </ul>
+
+                    <nav aria-label="Pagination" class="showtags">
+                        <ul class="pagination showtags">
+                            <li class="showtags"><a href="#" aria-disabled="true">&laquo; Previous</a></li>
+                            <li class="showtags"><a href="#" aria-current="page">1</a></li>
+                            <li class="showtags"><a href="#">2</a></li>
+                            <li class="showtags"><a href="#">3</a></li>
+                            <li class="showtags"><a href="#">4</a></li>
+                            <li class="showtags"><a href="#">5</a></li>
+                            <li class="showtags"><a href="#">Next &raquo;</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </main>
+        </div>
+
+        <div class="aside-container">
+
+            <aside aria-labelledby="aside-title" class="showtags">
+                <h2 id="aside-title" class="showtags">Quick Links</h2>
+                <ul>
+                    <li class="showtags"><a class="showtags" href="#">Accessibility Guidelines</a></li>
+                    <li class="showtags"><a class="showtags" href="#">WCAG Resources</a></li>
+                    <li class="showtags"><a class="showtags" href="#">Contact Support</a></li>
+                </ul>
+            </aside>
+        </div>
     </div>
 
     <footer class="showtags">
